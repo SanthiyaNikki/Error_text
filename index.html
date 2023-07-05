@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form-Error</title>
+    <style>
+      input:invalid {
+        background-color: #ffdddd;
+      }
+      form:invalid {
+        border: 5px solid #ffdddd;
+      }
+      input:required {
+        border-color: #800000;
+        border-width: 3px;
+      }
+      input:required:invalid {
+        border-color: #c00000;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" />
+      </div>
+      <br />
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required />
+      </div>
+      <br />
+      <input type="submit" value="submit" />
+    </form>
+  </body>
+</html>
